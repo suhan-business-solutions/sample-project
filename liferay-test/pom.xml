@@ -7,6 +7,20 @@
 	<packaging>war</packaging>
 	<name>liferay-test Portlet</name>
 	<version>1.0.0-SNAPSHOT</version>
+	<profiles>
+		<profile>
+		   <id>practice</id>
+				<properties>
+					<liferay.version>6.2.1</liferay.version>
+					<liferay.maven.plugin.version>6.2.1</liferay.maven.plugin.version>
+					<liferay.auto.deploy.dir>/Users/jpnaidu/projects/practice/Liferay-6.2-ga2/liferay-portal-6.2-ce-ga2/deploy</liferay.auto.deploy.dir>
+					<liferay.app.server.deploy.dir>/Users/jpnaidu/projects/practice/Liferay-6.2-ga2/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps</liferay.app.server.deploy.dir>
+					<liferay.app.server.lib.global.dir>/Users/jpnaidu/projects/practice/Liferay-6.2-ga2/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext</liferay.app.server.lib.global.dir>
+					<liferay.app.server.portal.dir>/Users/jpnaidu/projects/practice/Liferay-6.2-ga2/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT</liferay.app.server.portal.dir>
+					<java.source.version>1.6</java.source.version>
+				</properties>
+		</profile>
+	</profiles>
 	<build>
 		<plugins>
 			<plugin>
